@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    tools:context=".activities.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_image_height"
+            android:id="@+id/fl_header_bg">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_header_bg"
+                android:src="@drawable/auth_screens_background"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/content_description"
+                />
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar_setting_activity">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/title_settings"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/settings_name_textSize" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/settings_user_image_size"
+            android:layout_height="@dimen/settings_user_image_size"
+            android:id="@+id/fl_user_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_user_image_marginTop">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_user_photo"
+                android:contentDescription="@string/content_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_user_placeholder"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_image_background"/>
+
+        </FrameLayout>
+
+        <com.thunder.apps.myshoppal.utils.MSPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_edit"
+            android:layout_below="@+id/fl_header_bg"
+            android:text="@string/lbl_edit"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/item_grey_border_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingStart="@dimen/setting_edit_label_marginStartEnd"
+            android:paddingEnd="@dimen/setting_edit_label_marginStartEnd"
+            android:paddingTop="@dimen/setting_edit_label_marginTopBottom"
+            android:paddingBottom="@dimen/setting_edit_label_marginTopBottom"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/setting_edit_label_textSize"
+            android:layout_alignParentRight="true"
+            tools:ignore="UnusedAttribute" />
+
+        <com.thunder.apps.myshoppal.utils.MSPTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:layout_below="@id/fl_user_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_name_marginTop"
+            android:textColor="@color/colorDarkGrey"
+            tools:text = "Ashutosh Pandey"
+            android:textSize="@dimen/settings_name_textSize"/>
+
+        <com.thunder.apps.myshoppal.utils.MSPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_gender"
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_info_marginTop"
+            android:textSize="@dimen/settings_info_textSize"
+            android:textColor="@color/colorSecondaryText"
+            tools:text = "Male"/>
+        <com.thunder.apps.myshoppal.utils.MSPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_email"
+            android:layout_below="@id/tv_gender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_info_marginTop"
+            android:textSize="@dimen/settings_info_textSize"
+            android:textColor="@color/colorSecondaryText"
+            tools:text = "pandey123@gmail.com"/>
+        <com.thunder.apps.myshoppal.utils.MSPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mobile_number"
+            android:layout_below="@id/tv_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_info_marginTop"
+            android:textSize="@dimen/settings_info_textSize"
+            android:textColor="@color/colorSecondaryText"
+            tools:text = "9654656801"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_address"
+            android:layout_below="@+id/tv_mobile_number"
+            android:layout_margin="@dimen/settings_address_margin"
+            android:background="@drawable/item_grey_border_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/settings_address_padding"
+            >
+            <com.thunder.apps.myshoppal.utils.MSPTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/settings_lbl_addresses_margin"
+                android:layout_weight="1"
+                android:textSize="@dimen/settings_lbl_addresses_textSize"
+                android:textColor="@color/colorSecondaryText"
+                android:text="@string/lbl_addresses"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_vector_right"
+                />
+
+        </LinearLayout>
+
+        <com.thunder.apps.myshoppal.utils.MSPButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_logout"
+            android:layout_below="@+id/ll_address"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/settings_button_marginStartEnd"
+            android:layout_marginEnd="@dimen/settings_button_marginStartEnd"
+            android:layout_marginTop="@dimen/settings_button_marginTopBottom"
+            android:layout_marginBottom="@dimen/settings_button_marginTopBottom"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_background"
+            android:text="@string/btn_lbl_logout"
+            android:textSize="@dimen/btn_textSize"
+            android:textColor="@android:color/white"
+            android:paddingTop="@dimen/button_paddingTop_Bottom"
+            android:paddingBottom="@dimen/button_paddingTop_Bottom"
+            tools:ignore="UnusedAttribute" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/item_dashboard_margin"
+    android:background="@drawable/item_dashboard_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/item_dashboard_padding">
+
+    <ImageView
+        android:id="@+id/iv_dashboard_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_dashboard_image_height"
+        android:layout_margin="@dimen/item_dashboard_image_margin"
+        android:background="@color/placeholder_bg"
+        android:contentDescription="@string/content_description"
+        android:minHeight="@dimen/item_dashboard_image_height"
+        android:scaleType="fitXY"
+      />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@id/iv_dashboard_item_image"
+        android:background="@color/colorBorder" />
+
+    <LinearLayout
+        android:id="@+id/ll_dashboard_item_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_divider"
+        android:background="@color/dashboard_item_details_bg"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dashboard_item_paddingStartEnd"
+        android:paddingTop="@dimen/dashboard_item_paddingTopBottom"
+        android:paddingEnd="@dimen/dashboard_item_paddingStartEnd"
+        android:paddingBottom="@dimen/dashboard_item_paddingTopBottom">
+
+        <com.thunder.apps.myshoppal.utils.MSPTextViewBold
+            android:id="@+id/tv_dashboard_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item_value_text_color"
+            android:textSize="@dimen/dashboard_item_textSize"
+            android:background="@color/placeholder_bg"
+            android:textStyle="bold"
+            tools:text="Item Name" />
+
+        <com.thunder.apps.myshoppal.utils.MSPTextView
+            android:id="@+id/tv_dashboard_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dashboard_item_price_marginTop"
+            android:textColor="@color/item_value_text_color"
+            android:textSize="@dimen/dashboard_item_textSize"
+            android:textStyle="bold"
+            android:background="@color/placeholder_bg"
+            tools:text="$100.00" />
+    </LinearLayout>
+</RelativeLayout>

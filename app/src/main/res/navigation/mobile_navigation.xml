@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.thunder.apps.myshoppal.activities.ui.fragments.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_products" />
+
+    <fragment
+        android:id="@+id/navigation_products"
+        android:name="com.thunder.apps.myshoppal.activities.ui.fragments.ProductsFragment"
+        android:label="@string/title_products"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.thunder.apps.myshoppal.activities.ui.fragments.OrdersFragment"
+        android:label="@string/title_orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/navigation_sold_products"
+        android:name="com.thunder.apps.myshoppal.activities.ui.fragments.SoldProductsFragment"
+        android:label="@string/title_sold_products"
+        tools:layout="@layout/fragment_sold_products" />
+</navigation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- this is for checked state -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/colorAccent"/>
+
+            <corners android:bottomLeftRadius="@dimen/profile_radio_button_radius"
+                android:bottomRightRadius="@dimen/profile_radio_button_radius"
+                android:topLeftRadius="@dimen/profile_radio_button_radius"
+                android:topRightRadius="@dimen/profile_radio_button_radius"/>
+        </shape>
+    </item>
+ <!-- this is for unchecked state -->
+    <item   android:state_checked="false">
+        <shape android:shape="rectangle">
+
+            <stroke android:width="@dimen/gender_radio_button_stroke_width"
+                android:color="@color/colorSecondaryText"/>
+
+            <corners android:bottomLeftRadius="@dimen/profile_radio_button_radius"
+                android:bottomRightRadius="@dimen/profile_radio_button_radius"
+                android:topLeftRadius="@dimen/profile_radio_button_radius"
+                android:topRightRadius="@dimen/profile_radio_button_radius"/>
+
+        </shape>
+
+    </item>
+
+</selector>

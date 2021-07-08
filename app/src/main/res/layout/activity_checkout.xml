@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO Step 3: Design the screen layout.-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOffWhite"
+    tools:context=".activities.CheckoutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_checkout_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/app_gradient_color_background">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text="@string/title_checkout"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toolbar_title_text_size"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/toolbar_title_paddingStart"
+            android:paddingRight="0dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_checkout_activity"
+        android:layout_above="@+id/ll_checkout_place_order"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.thunder.apps.myshoppal.utils.MSPTextView
+                android:id="@+id/tv_product_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/checkout_content_marginStartEnd"
+                android:layout_marginTop="@dimen/checkout_content_marginTopBottom"
+                android:layout_marginEnd="@dimen/checkout_content_marginStartEnd"
+                android:paddingTop="@dimen/checkout_content_lbl_padding"
+                android:paddingBottom="@dimen/checkout_content_lbl_padding"
+                android:text="@string/checkout_lbl_product_items"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/checkout_lbl_textSize" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cart_list_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_product_items" />
+
+            <com.thunder.apps.myshoppal.utils.MSPTextView
+                android:id="@+id/tv_selected_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_cart_list_items"
+                android:layout_marginStart="@dimen/checkout_content_marginStartEnd"
+                android:layout_marginTop="@dimen/checkout_content_marginTopBottom"
+                android:layout_marginEnd="@dimen/checkout_content_marginStartEnd"
+                android:layout_marginBottom="@dimen/checkout_content_marginTopBottom"
+                android:paddingTop="@dimen/checkout_content_lbl_padding"
+                android:paddingBottom="@dimen/checkout_content_lbl_padding"
+                android:text="@string/checkout_lbl_selected_address"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/checkout_lbl_textSize" />
+
+            <LinearLayout
+                android:id="@+id/ll_checkout_address_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_selected_address"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/checkout_content_paddingStartEnd"
+                android:paddingTop="@dimen/checkout_content_paddingTopBottom"
+                android:paddingEnd="@dimen/checkout_content_paddingStartEnd"
+                android:paddingBottom="@dimen/checkout_content_paddingTopBottom">
+
+                <com.thunder.apps.myshoppal.utils.MSPTextView
+                    android:id="@+id/tv_checkout_address_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/address_details_marginTop"
+                    android:paddingBottom="@dimen/address_details_marginTop"
+                    android:textColor="@color/item_value_text_color"
+                    android:textSize="@dimen/address_details_textSize"
+                    android:textStyle="bold"
+                    tools:text="Home" />
+
+                <com.thunder.apps.myshoppal.utils.MSPTextViewBold
+                    android:id="@+id/tv_checkout_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/item_value_text_color"
+                    android:textSize="@dimen/item_address_name_textSize"
+                    tools:text="Denis Panjuta" />
+
+                <com.thunder.apps.myshoppal.utils.MSPTextView
+                    android:id="@+id/tv_checkout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/address_details_marginTop"
+                    android:textColor="@color/item_value_text_color"
+                    android:textSize="@dimen/address_details_textSize"
+                    tools:text="XYZ" />
+
+                <com.thunder.apps.myshoppal.utils.MSPTextView
+                    android:id="@+id/tv_checkout_additional_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/address_details_marginTop"
+                    android:textColor="@color/item_value_text_color"
+                    android:textSize="@dimen/address_details_textSize"
+                    tools:text="XYZ" />
+
+                <com.thunder.apps.myshoppal.utils.MSPTextView
+                    android:id="@+id/tv_checkout_other_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/address_details_marginTop"
+                    android:textColor="@color/item_value_text_color"
+                    android:textSize="@dimen/address_details_textSize"
+                    tools:text="XYZ" />
+
+                <com.thunder.apps.myshoppal.utils.MSPTextView
+                    android:id="@+id/tv_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/address_details_marginTop"
+                    android:textColor="@color/item_value_text_color"
+                    android:textSize="@dimen/address_details_textSize"
+                    tools:text="+64 123456789" />
+            </LinearLayout>
+
+            <com.thunder.apps.myshoppal.utils.MSPTextView
+                android:id="@+id/tv_items_receipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_checkout_address_details"
+                android:layout_marginStart="@dimen/checkout_content_marginStartEnd"
+                android:layout_marginTop="@dimen/checkout_content_marginTopBottom"
+                android:layout_marginEnd="@dimen/checkout_content_marginStartEnd"
+                android:layout_marginBottom="@dimen/checkout_content_marginTopBottom"
+                android:paddingTop="@dimen/checkout_content_lbl_padding"
+                android:paddingBottom="@dimen/checkout_content_lbl_padding"
+                android:text="@string/checkout_lbl_items_receipt"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/checkout_lbl_textSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_items_receipt"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/ll_checkout_items_receipt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.thunder.apps.myshoppal.utils.MSPTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/lbl_subtotal"
+                        android:textColor="@color/colorDarkGrey"
+                        android:textSize="@dimen/checkout_label_value_textSize" />
+
+                    <com.thunder.apps.myshoppal.utils.MSPTextView
+                        android:id="@+id/tv_checkout_sub_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/checkout_label_value_textSize"
+                        tools:text="Rs.100"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.thunder.apps.myshoppal.utils.MSPTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/lbl_shipping_charge"
+                        android:textColor="@color/colorDarkGrey"
+                        android:textSize="@dimen/checkout_label_value_textSize" />
+
+                    <com.thunder.apps.myshoppal.utils.MSPTextView
+                        android:id="@+id/tv_checkout_shipping_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Rs.10.0"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/checkout_label_value_textSize"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.thunder.apps.myshoppal.utils.MSPTextViewBold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/lbl_total_amount"
+                        android:textColor="@color/colorDarkGrey"
+                        android:textSize="@dimen/checkout_label_value_textSize" />
+
+                    <com.thunder.apps.myshoppal.utils.MSPTextViewBold
+                        android:id="@+id/tv_checkout_total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorDarkGrey"
+                        android:textSize="@dimen/checkout_label_value_textSize"
+                        tools:text="$110"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_checkout_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/ll_checkout_place_order_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.thunder.apps.myshoppal.utils.MSPTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lbl_payment_mode"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="@dimen/checkout_label_value_textSize" />
+
+            <com.thunder.apps.myshoppal.utils.MSPTextViewBold
+                android:id="@+id/tv_payment_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_cash_on_delivery"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="@dimen/checkout_label_value_textSize"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <com.thunder.apps.myshoppal.utils.MSPButton
+            android:id="@+id/btn_place_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/btn_padding"
+            android:paddingBottom="@dimen/btn_padding"
+            android:text="@string/btn_lbl_place_order"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_terms_and_condition"
+            tools:ignore="UnusedAttribute" />
+
+    </LinearLayout>
+</RelativeLayout>

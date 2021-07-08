@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="@dimen/progress_dialog_content_padding"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/progress_dialog_size"
+        android:layout_height="@dimen/progress_dialog_size"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorThemePink"
+        tools:ignore="UnusedAttribute" />
+    <com.thunder.apps.myshoppal.utils.MSPTextView
+        android:id="@+id/tv_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_wait"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/progress_text_size"
+        android:layout_marginStart="@dimen/progress_text_margin_start"
+        android:layout_marginLeft="@dimen/progress_text_margin_start" />
+
+
+</LinearLayout>

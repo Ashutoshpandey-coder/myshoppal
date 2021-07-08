@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">MyShopPal</string>
+
+    <!-- Login Activity -->
+    <string name="content_description">image</string>
+    <string name="title_login">LOGIN</string>
+    <string name="et_hint_email_id">Email ID</string>
+    <string name="et_hint_password">Password</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="btn_lbl_login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register"><u>Register</u></string>
+
+    <!--Register activity-->
+    <string name="create_an_account">CREATE AN ACCOUNT</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="et_hint_confirm_password">Confirm Password</string>
+    <string name="i_agree_to_the_terms_and_condition">I Agree To The <u> Terms &amp; Condition </u></string>
+    <string name="btn_lbl_register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login"><u>Login</u></string>
+    <string name="please_wait">Please wait…</string>
+
+    <!-- forgot password-->
+    <string name="btn_lbl_submit">Submit</string>
+    <string name="title_forgot_password">FORGOT PASSWORD</string>
+    <string name="forgot_password_title_description">Enter your username and e-mail address we\'ll send you a email to reset your password</string>
+    <string name="email_sent_successfully">Email sent successfully to reset your password!</string>
+
+    <!-- user profile activity -->
+    <string name="title_complete_profile">COMPLETE PROFILE</string>
+    <string name="et_hint_mobile_number">Mobile Number</string>
+    <string name="rb_lbl_male">MALE </string>
+    <string name="rb_label_female">FEMALE</string>
+    <string name="btn_lbl_save">Save</string>
+    <string name="read_storage_permission_denied">Oops! It seems like you just denied the permission needed. You can also allow it from settings.</string>
+    <string name="image_selection_failed">Something went wrong during image selection</string>
+
+    <string name="error_mobile_number">Please enter mobile number</string>
+
+    <string name="profile_update_success_message">Profile updated successfully</string>
+
+    <!--    <string name="title_activity_dashboard">MainActivity</string>-->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="please_press_back_again_to_exit">Please back again to Exit</string>
+    <string name="title_orders">Orders</string>
+    <string name="title_products">Products</string>
+    <string name="title_settings">Settings</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_addresses">Addresses</string>
+    <string name="btn_lbl_logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="add_product">Add Product</string>
+
+    <!-- Add product activity -->
+    <string name="title_add_product">ADD PRODUCT</string>
+    <string name="et_hint_product_title">Product Title</string>
+    <string name="et_hint_product_price">Product Price (Rs)</string>
+    <string name="et_hint_product_description">Product Description</string>
+    <string name="et_hint_product_quantity">Product Quantity</string>
+    <string name="error_message_product_image">Please select a product image</string>
+    <string name="error_message_product_title">Please enter a title</string>
+    <string name="error_message_product_quantity">please mention quantity</string>
+    <string name="error_message_product_description">please_add_description</string>
+    <string name="error_message_product_price">Please add Product Price</string>
+    <string name="product_upload_success_message">Your Product was uploaded successfully</string>
+    <string name="no_products_added_yet">No Products Added Yet!</string>
+    <string name="no_dashboard_item_found">No Item Found!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="product_delete_success">Your product is deleted successfully.</string>
+    <string name="delete_dialog_title">Delete</string>
+    <string name="delete_dialog_message">Are you sure you want to delete the product?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- product details activity-->
+    <string name="title_product_detail">PRODUCT DETAILS</string>
+    <string name="lbl_product_description">Product Description</string>
+    <string name="lbl_product_detail_stock_quantity">Stock Quantity</string>
+    <string name="btn_lbl_add_to_cart">ADD TO CART</string>
+    <string name="success_message_item_added_in_cart">Product was added to your cart.</string>
+    <string name="btn_lbl_go_to_cart">Go To Cart</string>
+
+    <!-- cartList strings -->
+    <string name="title_my_cart">MY CART</string>
+    <string name="no_cart_item_found">No item found in cart!</string>
+    <string name="lbl_subtotal">Subtotal</string>
+    <string name="lbl_shipping_charge">Shipping Charge</string>
+    <string name="lbl_total_amount">Total Amount</string>
+    <string name="btn_lbl_checkout">Checkout</string>
+    <string name="action_cart">My Cart</string>
+    <string name="lbl_text_out_of_stock">OUT OF STOCK</string>
+    <string name="msg_item_removed_successfully">Item removed successfully</string>
+
+    <!-- Address -->
+    <string name="title_address_list">ADDRESS LIST</string>
+    <string name="no_address_found">No Address Found</string>
+    <string name="lbl_add_address">Add Address</string>
+
+    <!-- Add Address -->
+    <string name="title_add_address">ADD ADDRESS</string>
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_phone_number">Phone number</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_zip_code">Zip code</string>
+    <string name="hint_additional_note">Additional note</string>
+    <string name="lbl_home">HOME</string>
+    <string name="lbl_office">OFFICE</string>
+    <string name="lbl_other">OTHER</string>
+    <string name="hint_other_details">Other details</string>
+    <string name="address_added_success_msg">Address was added successfully</string>
+
+    <string name="title_edit_address">EDIT ADDRESS</string>
+    <string name="btn_lbl_update">UPDATE</string>
+    <string name="msg_your_address_updated_successfully">Your address was updated successfully.</string>
+    <string name="error_message_address_deleted_successfully">Address was deleted successfully.</string>
+    <string name="select_address">SELECT ADDRESS</string>
+
+    <!-- checkout activity -->
+    <string name="title_checkout">CHECKOUT</string>
+    <string name="checkout_lbl_product_items">Product Items</string>
+    <string name="checkout_lbl_selected_address">Selected Address</string>
+    <string name="checkout_lbl_items_receipt">Items Receipt</string>
+    <string name="lbl_payment_mode">Payment Mode</string>
+    <string name="lbl_cash_on_delivery">Cash On Delivery</string>
+    <string name="btn_lbl_place_order">PLACE ORDER</string>
+    <string name="no_order_placed_yet">No Order Placed Yet!</string>
+
+    <!-- my order details activity -->
+    <string name="title_my_order_details">MY ORDER DETAILS</string>
+    <string name="order_details_lbl">Order Details</string>
+    <string name="order_details_lbl_order_id">Order ID</string>
+    <string name="order_details_lbl_order_date">Order Date</string>
+    <string name="order_details_lbl_order_status">Order Status</string>
+    <string name="order_status_pending">Pending</string>
+    <string name="order_details_lbl_shipping_address">Shipping Address</string>
+
+    <string name="order_status_in_process">In Process</string>
+    <string name="order_status_delivered">Delivered</string>
+    <string name="title_sold_products">Sold Products</string>
+    <string name="no_products_sold_out_yet">No Product Sold Yet!</string>
+
+    <string name="title_sold_product_details">SOLD PRODUCT DETAILS</string>
+</resources>

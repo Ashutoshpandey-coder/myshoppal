@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_screen_title_text_size">35sp</dimen>
+    <dimen name="button_background_radius">10dp</dimen>
+
+    <!-- Login activity -->
+    <dimen name="auth_header_image_height">200dp</dimen>
+    <dimen name="auth_logo_width_size">220dp</dimen>
+    <dimen name="auth_logo_height_size">100dp</dimen>
+    <dimen name="title_textSize">18sp</dimen>
+    <dimen name="et_textSize">16sp</dimen>
+    <dimen name="et_padding">16dp</dimen>
+    <dimen name="clickable_text_view_padding">5dp</dimen>
+    <dimen name="forgot_password_textSize">14sp</dimen>
+    <dimen name="btn_textSize">18sp</dimen>
+    <dimen name="btn_padding">8dp</dimen>
+    <dimen name="lbl_text_view_textSize">16sp</dimen>
+
+    <!-- register Activity -->
+    <dimen name="toolbar_title_padding_start">25dp</dimen>
+    <dimen name="toolbar_title_text_size">18sp</dimen>
+    <dimen name="txt_terms_condition_marginStart">10dp</dimen>
+    <dimen name="txt_terms_and_condition_textSize">14sp</dimen>
+    <dimen name="button_paddingTop_Bottom">8dp</dimen>
+    <dimen name="progress_dialog_content_padding">10dp</dimen>
+    <dimen name="progress_dialog_size">50dp</dimen>
+    <dimen name="progress_text_size">16sp</dimen>
+    <dimen name="progress_text_margin_start">16dp</dimen>
+    <dimen name="forgot_password_title_description_textSize">14sp</dimen>
+    <dimen name="forgot_password_title_textSize">18sp</dimen>
+
+    <!-- user profile activity-->
+    <dimen name="user_image_background_stroke">4dp</dimen>
+    <dimen name="user_image_background_corner_radius">10dp</dimen>
+    <dimen name="profile_user_image_size">150dp</dimen>
+    <dimen name="profile_user_image_marginTop">20dp</dimen>
+    <dimen name="profile_user_photo_margin">3dp</dimen>
+    <dimen name="profile_radio_button_height">40dp</dimen>
+    <dimen name="profile_radio_button_marginStartEnd">3dp</dimen>
+    <dimen name="profile_radio_button_radius">5dp</dimen>
+    <dimen name="gender_radio_button_stroke_width">1dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- setting activity dimen -->
+    <dimen name="header_image_height">200dp</dimen>
+    <dimen name="settings_user_image_size">150dp</dimen>
+    <dimen name="settings_user_image_marginTop">125dp</dimen>
+    <dimen name="settings_user_picture_margin">3dp</dimen>
+    <dimen name="grey_border_stroke_size">1dp</dimen>
+    <dimen name="gray_border_radius">2dp</dimen>
+    <dimen name="setting_edit_label_marginStartEnd">10dp</dimen>
+    <dimen name="setting_edit_label_marginTopBottom">5dp</dimen>
+    <dimen name="setting_edit_label_textSize">14sp</dimen>
+    <dimen name="settings_name_marginTop">30dp</dimen>
+    <dimen name="settings_name_textSize">22sp</dimen>
+    <dimen name="settings_info_marginTop">3dp</dimen>
+    <dimen name="settings_info_textSize">18sp</dimen>
+    <dimen name="settings_address_margin">16dp</dimen>
+    <dimen name="settings_address_padding">16dp</dimen>
+    <dimen name="settings_lbl_addresses_margin">3dp</dimen>
+    <dimen name="settings_lbl_addresses_textSize">18sp</dimen>
+    <dimen name="settings_button_marginStartEnd">50dp</dimen>
+    <dimen name="settings_button_marginTopBottom">16dp</dimen>
+
+    <!-- add product activity -->
+    <dimen name="add_product_header_image_height">250dp</dimen>
+    <dimen name="add_update_product_icon_padding">16dp</dimen>
+    <dimen name="toolbar_title_paddingStart">5dp</dimen>
+    <dimen name="no_data_found_text_size">20sp</dimen>
+
+    <!-- item list layout -->
+    <dimen name="item_list_marginTop">16dp</dimen>
+    <dimen name="item_list_padding">10dp</dimen>
+    <dimen name="item_image_padding">2dp</dimen>
+    <dimen name="item_image_width">80dp</dimen>
+    <dimen name="item_image_height">70dp</dimen>
+    <dimen name="item_image_title_price_marginStart">10dp</dimen>
+    <dimen name="rv_item_name_textSize">14sp</dimen>
+    <dimen name="rv_item_price_marginTop">2dp</dimen>
+    <dimen name="rv_item_price_textSize">12sp</dimen>
+    <dimen name="delete_icon_padding">5dp</dimen>
+
+    <!-- dashboard fragment -->
+    <dimen name="item_dashboard_margin">5dp</dimen>
+    <dimen name="item_dashboard_padding">1dp</dimen>
+    <dimen name="item_dashboard_image_height">150dp</dimen>
+    <dimen name="item_dashboard_image_margin">10dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="dashboard_item_paddingStartEnd">10dp</dimen>
+    <dimen name="dashboard_item_paddingTopBottom">5dp</dimen>
+    <dimen name="dashboard_item_textSize">12sp</dimen>
+    <dimen name="dashboard_item_price_marginTop">2dp</dimen>
+
+    <!-- product detail activity-->
+    <dimen name="product_detail_image_height">250dp</dimen>
+    <dimen name="product_details_title_price_marginTop">16dp</dimen>
+    <dimen name="product_details_title_price_padding">16dp</dimen>
+    <dimen name="product_details_title_textSize">16sp</dimen>
+    <dimen name="product_details_price_textSize">14sp</dimen>
+    <dimen name="product_details_label_textSize">16sp</dimen>
+    <dimen name="product_details_label_margin">16dp</dimen>
+    <dimen name="product_details_stock_quantity_paddingStartEnd">16dp</dimen>
+    <dimen name="product_details_stock_quantity_paddingTopBottom">5dp</dimen>
+    <dimen name="product_details_description_textSize">14sp</dimen>
+    <dimen name="product_details_stock_quantity_textSize">16sp</dimen>
+
+    <!-- CartList activity-->
+    <dimen name="rv_cart_items_marginTop">16dp</dimen>
+    <dimen name="ll_checkout_padding">16dp</dimen>
+    <dimen name="checkout_label_value_textSize">18sp</dimen>
+
+    <!-- card Item -->
+    <dimen name="cart_item_marginTop">16dp</dimen>
+    <dimen name="cart_item_paddingStartEnd">16dp</dimen>
+    <dimen name="cart_item_paddingTopBottom">12dp</dimen>
+    <dimen name="cart_item_image_padding">2dp</dimen>
+    <dimen name="cart_item_image_width">80dp</dimen>
+    <dimen name="cart_item_image_height">70dp</dimen>
+    <dimen name="cart_item_title_textSize">16sp</dimen>
+    <dimen name="cart_item_details_marginStart">10dp</dimen>
+    <dimen name="cart_item_details_marginEnd">2dp</dimen>
+    <dimen name="ib_cart_item_padding">5dp</dimen>
+    <dimen name="cart_item_price_textSize">12sp</dimen>
+    <dimen name="update_cart_quantity_marginStart">5dp</dimen>
+    <dimen name="update_cart_quantity_marginEnd">16dp</dimen>
+    <dimen name="ib_remove_cart_item_marginStartEnd">5dp</dimen>
+    <dimen name="cart_quantity_paddingStartEnd">16dp</dimen>
+    <dimen name="cart_quantity_paddingTopBottom">3dp</dimen>
+    <dimen name="cart_quantity_textSize">14sp</dimen>
+    <dimen name="ib_add_cart_item_marginStart">5dp</dimen>
+    <dimen name="ib_add_cart_item_marginEnd">16dp</dimen>
+
+    <!-- address -->
+    <dimen name="btn_add_address_margin">16dp</dimen>
+    <dimen name="btn_add_address_padding">16dp</dimen>
+    <dimen name="btn_address_textSize">18sp</dimen>
+    <dimen name="rv_address_list_marginTop">16dp</dimen>
+    <dimen name="add_edit_address_radio_button_height">40dp</dimen>
+    <dimen name="add_edit_address_radio_button_marginStartEnd">5dp</dimen>
+
+    <!-- item address list -->
+    <dimen name="item_address_marginTop">16dp</dimen>
+    <dimen name="item_address_paddingStartEnd">16dp</dimen>
+    <dimen name="item_address_paddingTopBottom">10dp</dimen>
+    <dimen name="item_address_name_textSize">18sp</dimen>
+    <dimen name="item_address_type_paddingStartEnd">10dp</dimen>
+    <dimen name="item_address_type_paddingTopBottom">2dp</dimen>
+    <dimen name="address_details_textSize">14sp</dimen>
+    <dimen name="address_details_marginTop">2dp</dimen>
+
+    <!-- checkout activity -->
+    <dimen name="checkout_content_marginStartEnd">16dp</dimen>
+    <dimen name="checkout_content_marginTopBottom">10dp</dimen>
+    <dimen name="checkout_content_lbl_padding">2dp</dimen>
+    <dimen name="checkout_lbl_textSize">14sp</dimen>
+    <dimen name="checkout_content_paddingStartEnd">16dp</dimen>
+    <dimen name="checkout_content_paddingTopBottom">10dp</dimen>
+    <dimen name="ll_checkout_place_order_padding">16dp</dimen>
+    <dimen name="ll_checkout_items_receipt">16dp</dimen>
+
+    <!-- my order details activity -->
+    <dimen name="my_order_details_content_marginStartEnd">16dp</dimen>
+    <dimen name="my_order_details_content_marginTopBottom">10dp</dimen>
+    <dimen name="my_order_details_content_lbl_padding">2dp</dimen>
+    <dimen name="my_order_details_lbl_textSize">14sp</dimen>
+    <dimen name="my_order_details_status_paddingStartEnd">10dp</dimen>
+    <dimen name="my_order_details_status_paddingTopBottom">2dp</dimen>
+    <dimen name="lbl_order_details_textSize">16sp</dimen>
+    <dimen name="my_order_details_content_paddingStartEnd">16dp</dimen>
+    <dimen name="my_order_details_content_paddingTopBottom">10dp</dimen>
+    <dimen name="my_order_details_items_receipt">16dp</dimen>
+    <dimen name="my_order_details_label_value_textSize">18sp</dimen>
+
+    <!-- sold product activity -->
+    <dimen name="sold_details_content_marginStartEnd">16dp</dimen>
+    <dimen name="sold_details_content_marginTopBottom">10dp</dimen>
+    <dimen name="sold_details_content_lbl_padding">2dp</dimen>
+    <dimen name="sold_details_lbl_textSize">14sp</dimen>
+    <dimen name="sold_details_value_textSize">12sp</dimen>
+    <dimen name="sold_details_status_paddingStartEnd">10dp</dimen>
+    <dimen name="sold_details_status_paddingTopBottom">2dp</dimen>
+    <dimen name="lbl_sold_details_textSize">16sp</dimen>
+    <dimen name="sold_details_content_paddingStartEnd">16dp</dimen>
+    <dimen name="sold_details_content_paddingTopBottom">10dp</dimen>
+    <dimen name="sold_details_items_receipt">16dp</dimen>
+    <dimen name="sold_details_label_value_textSize">18sp</dimen>
+
+
+</resources>
