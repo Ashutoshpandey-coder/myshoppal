@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81689972/124975747-f7d48080-e04b-11eb-8600-90dc89b3c652.png" width=100/>
+  <img src="https://user-images.githubusercontent.com/81689972/124975747-f7d48080-e04b-11eb-8600-90dc89b3c652.png" width=150/>
   <h1 align="center">MyShopPal (E-commerce app)</h1>
 
 </p>
