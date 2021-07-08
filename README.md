@@ -1,2 +1,2 @@
-# myshoppal
+# MyShopPal
 e - commerce app
