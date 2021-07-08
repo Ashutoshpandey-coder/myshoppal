@@ -2,7 +2,7 @@
 e - commerce app
 
 #ScreenShots
-<img src="https://user-images.githubusercontent.com/81689972/124970978-4b43d000-e046-11eb-8824-cc1e7c4698ba.jpg"width="50 >
+< img src="https://user-images.githubusercontent.com/81689972/124970978-4b43d000-e046-11eb-8824-cc1e7c4698ba.jpg" width="50 >
 ![Screenshot_20210708_225207](https://user-images.githubusercontent.com/81689972/124970978-4b43d000-e046-11eb-8824-cc1e7c4698ba.jpg)
 ![Screenshot_20210708_225220](https://user-images.githubusercontent.com/81689972/124971051-5eef3680-e046-11eb-9bb6-48b56f47422c.jpg)
 ![Screenshot_20210708_225246](https://user-images.githubusercontent.com/81689972/124971095-69113500-e046-11eb-99b5-7a818dd73681.jpg)
