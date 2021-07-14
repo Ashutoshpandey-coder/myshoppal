@@ -3,6 +3,7 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81689972/124975747-f7d48080-e04b-11eb-8600-90dc89b3c652.png" width=150/>
   <h1 align="center">MyShopPal (E-commerce app)</h1>
+  <h3 align="center">**Version 1.0.0**</h3>
 
 </p>
 
@@ -47,8 +48,24 @@
   </tr>
  </table>
  
- ## Third-Party Libraries
- <h2>Firebase</h2>
- [Firebase Server](https://console.firebase.google.com/u/0/)
+ # Third-Party Libraries
+ ### Firebase
+ [Firebase Server](https://github.com/firebase/quickstart-android)
+  ### Glide
+ [Glide image loader](https://github.com/bumptech/glide)
+ ### Shimmer Effect
+ [Shimmer facebook library](http://facebook.github.io/shimmer-android/)
+ 
+ # Credits
+ ### icon and vectors
+ [FreePik](https://www.freepik.com/)
+ <br/>
+ [Google Icons](https://fonts.google.com/icons)
+ ### Fonts
+ [Google Fonts](https://fonts.google.com/)
+ 
+ # Reference
+ ### Udemy
+ [Denis Panjuta Firebase](https://www.udemy.com/share/103IMk2@PkdKVGJjWlQOd0BGAnd3RBRuSldiYw==/)
 
 
