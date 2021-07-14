@@ -28,7 +28,8 @@
             android:layout_gravity="center"
             android:contentDescription="@string/content_description"
             android:scaleType="fitCenter"
-            app:tint="@color/white" />
+            android:src="@drawable/my_shop_pal_icon"
+             />
 
     </FrameLayout>
     <com.thunder.apps.myshoppal.utils.MSPTextViewBold
