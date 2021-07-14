@@ -66,6 +66,6 @@
  
  # Reference
  ### Udemy
- [Denis Panjuta Firebase](https://www.udemy.com/share/103IMk2@PkdKVGJjWlQOd0BGAnd3RBRuSldiYw==/)
+ [Denis Panjuta Firebase](https://www.udemy.com/)
 
 
