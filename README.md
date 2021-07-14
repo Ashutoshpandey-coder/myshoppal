@@ -26,7 +26,7 @@
   <tr>
     <td>Dashboard</td>
      <td>Products Screen</td>
-     <td>Oders Screen</td>
+     <td>Orders Screen</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/81689972/124971095-69113500-e046-11eb-99b5-7a818dd73681.jpg" width=500></td>
